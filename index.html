@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technology & Information Systems | e-Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --accent: #6c7bff;
+  --accent2: #00e0c6;
+  --bg: #0b0e1d;
+  --glass: rgba(255,255,255,0.08);
+  --border: rgba(255,255,255,0.15);
+  --text: #e9ecff;
+  --muted: #b3b8e0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #141848, #070914);
+  color: var(--text);
+  padding: 60px 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: var(--muted);
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: linear-gradient(135deg, var(--glass), transparent);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 30px;
+  margin-bottom: 28px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 40px 90px rgba(0,0,0,0.7);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-header h2 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.card-header span {
+  color: var(--accent2);
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease, opacity 0.6s ease;
+  opacity: 0;
+}
+
+.card.active .content {
+  max-height: 2000px;
+  opacity: 1;
+  margin-top: 25px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 8px 10px 8px 0;
+  padding: 12px 22px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.reflection {
+  margin-top: 18px;
+  line-height: 1.75;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Technology & Information Systems</h1>
+  <p>
+    This e-portfolio documents my academic journey through hands-on technical work,
+    industrial exposure, and user-centered problem solving.
+  </p>
+</header>
+
+<div class="container">
+
+<!-- 1 -->
+<div class="card">
+  <div class="card-header">
+    <h2>PC Assemble</h2>
+    <span>Reflection on building a PC</span>
+  </div>
+  <div class="content">
+    <div class="links">
+      <a href="https://drive.google.com/file/d/11AUi677e9AnibLRye0olTJYGlhibgHgI/view?usp=sharing" target="_blank">Open Link</a>
+    </div>
+    <p class="reflection">
+      During the PC assembly, I installed and configured key hardware components including
+      the motherboard, CPU, RAM, storage, and GPU. This experience strengthened my understanding
+      of hardware compatibility, cable management, and system integration, while reinforcing
+      the importance of precision and patience when working with sensitive electronics.
+    </p>
+  </div>
+</div>
+
+<!-- 2 -->
+<div class="card">
+  <div class="card-header">
+    <h2>Assignment 1</h2>
+    <span>Industrial Visit 1 (Video)</span>
+  </div>
+  <div class="content">
+    <div class="links">
+      <a href="https://drive.google.com/file/d/11SgTZKaeUu0TfvWwbU0VJp32xZgFniw5/view?usp=sharing" target="_blank">Open Link</a>
+    </div>
+    <p class="reflection">
+      The industrial visit provided meaningful exposure to real-world IT implementations.
+      From rugged military-grade devices at Dell to AI-driven analytics at TecD Distribution,
+      and enterprise platforms such as Oracle and Archibus, the visit highlighted how
+      specialized systems support large-scale, mission-critical operations.
+    </p>
+  </div>
+</div>
+
+<!-- 3 -->
+<div class="card">
+  <div class="card-header">
+    <h2>Assignment 2</h2>
+    <span>Industrial Talk 1 Poster (PPG)</span>
+  </div>
+  <div class="content">
+    <div class="links">
+      <a href="https://drive.google.com/file/d/1YAEBrHODaCNVNEhEX0kJ953brtlXjilP/view?usp=sharing" target="_blank">Open Link</a>
+    </div>
+    <p class="reflection">
+      The talk by PPG offered deep insight into enterprise-scale data management,
+      demonstrating how data lakes, analytics, and MLOps drive strategic decisions.
+      Understanding SAP as the backbone of global operations connected theoretical
+      concepts with real industrial practices.
+    </p>
+  </div>
+</div>
+
+<!-- 4 -->
+<div class="card">
+  <div class="card-header">
+    <h2>Assignment 3</h2>
+    <span>Clarity Techwork Sdn Bhd Poster</span>
+  </div>
+  <div class="content">
+    <div class="links">
+      <a href="https://www.canva.com/design/DAG-3FlzlbY/jONB7O8GlES5HIMnz9WdSQ/edit" target="_blank">Open Link</a>
+    </div>
+    <p class="reflection">
+      This assignment examined how Clarity Techwork delivers IT solutions that support
+      digital transformation and operational efficiency. It enhanced my ability to
+      synthesize technical information into a concise and visually professional format.
+    </p>
+  </div>
+</div>
+
+<!-- 5 -->
+<div class="card">
+  <div class="card-header">
+    <h2>Assignment 4</h2>
+    <span>AirAsia Poster</span>
+  </div>
+  <div class="content">
+    <div class="links">
+      <a href="https://www.canva.com/design/DAG-3A6ph6Y/xp4axYGZt8t1wZ3rTdMo8A/edit" target="_blank">Open Link</a>
+    </div>
+    <p class="reflection">
+      This poster explored AirAsia’s use of technology to optimize operations,
+      enhance customer experience, and support data-driven decision making.
+      It reinforced the role of IT systems in enabling efficiency within
+      large-scale service organizations.
+    </p>
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="card">
+  <div class="card-header">
+    <h2>Project Design Thinking</h2>
+    <span>UTM AI Campus Life Assistant</span>
+  </div>
+  <div class="content">
+    <div class="links">
+      <a href="https://drive.google.com/file/d/1UlNI1HOB-d8Zp6rDG3VzZIASH8oGHObp/view?usp=sharing" target="_blank">Report</a>
+      <a href="https://drive.google.com/file/d/1ZT_S2LL5k1gJ8RU8jh0EFjez85bLEvma/view?usp=sharing" target="_blank">Presentation</a>
+      <a href="https://drive.google.com/file/d/1iIjZmYn8uRIJXNwNhktf9GdQ6UNO1DI4/view?usp=sharing" target="_blank">Prototype Video</a>
+    </div>
+    <p class="reflection">
+      This project emphasized user-centered problem solving through the design thinking
+      process. By grounding solutions in empathy, iterative prototyping, and testing,
+      we learned that meaningful innovation emerges from understanding real user needs
+      rather than assumptions.
+    </p>
+  </div>
+</div>
+
+</div>
+
+<footer>
+  © Technology & Information Systems e-Portfolio
+</footer>
+
+<script>
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
+</script>
+
+</body>
+</html>
